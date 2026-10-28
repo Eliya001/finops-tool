@@ -138,4 +138,4 @@ async function runAnalysis() {
   return summary;
 }
 
-module.exports = { runAnalysis };
+module.exports = { runAnalysis, LOOKBACK_DAYS };

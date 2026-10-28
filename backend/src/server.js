@@ -12,6 +12,7 @@ app.use('/workloads/:workloadId/cost-snapshots', require('./routes/costSnapshotR
 app.use('/workloads/:workloadId/usage-snapshots', require('./routes/usageSnapshotRoutes'));
 app.use('/recommendations', require('./routes/recommendationRoutes'));
 app.use('/analysis', require('./routes/analysisRoutes'));
+app.use('/summary', require('./routes/summaryRoutes'));
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
