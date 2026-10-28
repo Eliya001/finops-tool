@@ -11,6 +11,7 @@ app.use('/namespaces/:namespaceId/workloads', require('./routes/workloadRoutes')
 app.use('/workloads/:workloadId/cost-snapshots', require('./routes/costSnapshotRoutes'));
 app.use('/workloads/:workloadId/usage-snapshots', require('./routes/usageSnapshotRoutes'));
 app.use('/recommendations', require('./routes/recommendationRoutes'));
+app.use('/analysis', require('./routes/analysisRoutes'));
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
