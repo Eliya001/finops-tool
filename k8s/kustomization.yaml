@@ -7,3 +7,5 @@ resources:
   - backend-configmap.yaml
   - backend-service.yaml
   - backend-deployment.yaml
+  - frontend-service.yaml
+  - frontend-deployment.yaml
