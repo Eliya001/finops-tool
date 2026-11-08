@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: finops
+data:
+  PORT: "4000"
+  PGHOST: postgres
+  PGPORT: "5432"
+  PGUSER: finops
+  PGDATABASE: finops_db
