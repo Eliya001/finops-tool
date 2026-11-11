@@ -13,7 +13,7 @@ resources:
 images:
   - name: finops-backend
     newName: ghcr.io/eliya001/finops-backend
-    newTag: sha-13f5199
+    newTag: sha-945931d
   - name: finops-frontend
     newName: ghcr.io/eliya001/finops-frontend
-    newTag: sha-13f5199
+    newTag: sha-945931d
