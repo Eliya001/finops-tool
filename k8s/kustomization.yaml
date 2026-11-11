@@ -9,3 +9,11 @@ resources:
   - backend-deployment.yaml
   - frontend-service.yaml
   - frontend-deployment.yaml
+
+images:
+  - name: finops-backend
+    newName: ghcr.io/eliya001/finops-backend
+    newTag: latest
+  - name: finops-frontend
+    newName: ghcr.io/eliya001/finops-frontend
+    newTag: latest

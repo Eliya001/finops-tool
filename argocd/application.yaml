@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: finops
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Eliya001/finops-tool.git
+    targetRevision: main
+    path: k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: finops
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
